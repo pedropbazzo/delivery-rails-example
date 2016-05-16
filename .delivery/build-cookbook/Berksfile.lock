@@ -1,0 +1,67 @@
+DEPENDENCIES
+  apt
+  build-cookbook
+    path: .
+    metadata: true
+  delivery-base
+    git: https://github.com/chef-cookbooks/delivery-base
+    revision: 876b0e0c6fd1b95947cfebfb6c3d824d6dfd3f1c
+  delivery-sugar
+    git: git://github.com/chef-cookbooks/delivery-sugar.git
+    revision: 1a90afaa2506c249fd79cdf4d7b7037ace3d1d4a
+  delivery-truck
+    git: git://github.com/chef-cookbooks/delivery-truck.git
+    revision: 4044544f951225d099ce5b30d726506ad40be6b3
+  delivery_build
+    git: https://github.com/jjasghar/delivery_build
+    revision: 53a53a5341e40d8356d7489a1db791cdaab8a7e1
+    branch: patch-1
+  test
+    path: test/fixtures/cookbooks/test
+
+GRAPH
+  apt (3.0.0)
+  build-cookbook (0.1.0)
+  build-essential (4.0.0)
+    mingw (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  chef-ingredient (0.18.4)
+  chef-sugar (3.3.0)
+  chef_handler (1.4.0)
+  compat_resource (12.9.1)
+  delivery-base (0.2.1)
+    push-jobs (>= 0.0.0)
+  delivery-sugar (1.0.2)
+  delivery-truck (2.0.7)
+    delivery-sugar (>= 1.0.2)
+  delivery_build (0.4.25)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    chef-ingredient (>= 0.18.0)
+    chef-sugar (>= 0.0.0)
+    delivery-base (>= 0.0.0)
+    git (>= 0.0.0)
+  dmg (2.4.0)
+  git (4.5.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  mingw (1.0.0)
+    compat_resource (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  packagecloud (0.2.0)
+  push-jobs (2.6.6)
+    chef-ingredient (>= 0.18.0)
+    runit (>= 0.0.0)
+    windows (>= 0.0.0)
+  runit (1.7.8)
+    packagecloud (>= 0.0.0)
+  seven_zip (2.0.0)
+    windows (>= 1.2.2)
+  test (0.1.0)
+  windows (1.40.0)
+    chef_handler (>= 0.0.0)
+  yum (3.10.0)
+  yum-epel (0.7.0)
+    yum (>= 3.6.3)
